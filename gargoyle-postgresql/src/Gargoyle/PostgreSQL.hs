@@ -81,6 +81,7 @@ startLocalPostgres binPath eval dbDir = do
     [ "-h", ""
     , "-D", absoluteDbDir
     , "-k", absoluteDbDir
+    , "-i"
     ] Nothing Nothing
   eval err
   return postgres
